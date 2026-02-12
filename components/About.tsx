@@ -1,10 +1,13 @@
+import AnimatedGridPatternDemo from '@/components/AnimatedGridPatternDemo'
+
 export default function About() {
   return (
     <section
       id="about"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-[#1e1e1e]"
+      className="relative overflow-hidden bg-[#1e1e1e] px-4 py-20 sm:px-6 lg:px-8"
     >
-      <div className="max-w-4xl mx-auto">
+      <AnimatedGridPatternDemo className="opacity-50" />
+      <div className="relative z-10 mx-auto max-w-4xl">
         <h2 className="text-4xl font-bold text-center mb-12 text-white">
           About Me
         </h2>
@@ -23,4 +26,3 @@ export default function About() {
     </section>
   )
 }
-
