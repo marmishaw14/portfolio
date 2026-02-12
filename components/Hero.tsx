@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import AnimatedGridPatternDemo from '@/components/AnimatedGridPatternDemo'
+import { ShineBorder } from '@/components/ui/shine-border'
 
 export default function Hero() {
   const [imageError, setImageError] = useState(false)
@@ -69,24 +70,31 @@ export default function Hero() {
           {/* Right side - Image and headline */}
           <div className="flex flex-col items-center">
             <div className="relative w-full max-w-md">
-              <div className="aspect-square rounded-lg overflow-hidden shadow-2xl border-4 border-gray-600 bg-gray-800">
+              <div className="relative aspect-square rounded-lg bg-gray-800 p-[3px] shadow-2xl">
+                <ShineBorder
+                  borderWidth={3}
+                  duration={10}
+                  shineColor="#A07CFE"
+                />
+                <div className="relative z-10 h-full w-full overflow-hidden rounded-[calc(0.5rem-3px)]">
                 {!imageError ? (
                   <Image
                     src="/mccauley-avatar.jpg"
                     alt="McCauley"
                     width={500}
                     height={500}
-                    className="object-cover w-full h-full"
+                    className="h-full w-full object-cover"
                     priority
                     onError={() => setImageError(true)}
                   />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-800 to-primary-900">
+                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary-800 to-primary-900">
                     <span className="text-gray-400 text-lg">Add your photo</span>
                   </div>
                 )}
+                </div>
               </div>
-              <div className="group absolute -top-7 -right-7">
+              <div className="group absolute -top-7 -right-7 z-20">
                 <a
                   href="https://www.cansbridgescholars.com/"
                   target="_blank"
