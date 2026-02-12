@@ -1,15 +1,20 @@
 # Portfolio Website
 
-A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+Personal portfolio site built with Next.js 14, TypeScript, and Tailwind CSS.
 
-## Features
+## Current Sections
 
-- 🚀 Built with Next.js 14 (App Router)
-- 💻 TypeScript for type safety
-- 🎨 Tailwind CSS for styling
-- 📱 Fully responsive design
-- 🌙 Dark mode support
-- ⚡ Fast and optimized
+- `Home` (`components/Hero.tsx`)
+- `About` (`components/About.tsx`)
+- `Projects` (`components/Projects.tsx`)
+- Top navigation (`components/Navigation.tsx`)
+
+## Tech Stack
+
+- `Next.js` 14 (App Router)
+- `React` 18
+- `TypeScript`
+- `Tailwind CSS`
 
 ## Getting Started
 
@@ -17,48 +22,43 @@ A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 ```bash
 npm install
 ```
-
-2. Run the development server:
+2. Start the dev server:
 ```bash
 npm run dev
 ```
-
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. Open `http://localhost:3000`.
 
 ## Project Structure
 
-```
+```text
 portfolio-website/
 ├── app/
-│   ├── layout.tsx      # Root layout
-│   ├── page.tsx        # Home page
-│   └── globals.css     # Global styles
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
 ├── components/
-│   ├── Navigation.tsx  # Navigation bar
-│   ├── Hero.tsx        # Hero section
-│   ├── About.tsx       # About section
-│   ├── Skills.tsx      # Skills section
-│   ├── Projects.tsx    # Projects section
-│   └── Contact.tsx    # Contact form
-└── public/             # Static assets
+│   ├── About.tsx
+│   ├── Blogs.tsx
+│   ├── Hero.tsx
+│   ├── Navigation.tsx
+│   └── Projects.tsx
+└── public/
+    └── (images and static assets)
 ```
 
 ## Customization
 
-1. **Update personal information**: Edit the components in the `components/` directory
-2. **Modify colors**: Update the color scheme in `tailwind.config.js`
-3. **Add projects**: Edit the `projects` array in `components/Projects.tsx`
-4. **Update skills**: Edit the `skills` array in `components/Skills.tsx`
-5. **Change metadata**: Update `app/layout.tsx` with your information
+1. Update hero/about copy in `components/Hero.tsx` and `components/About.tsx`.
+2. Update project cards in `components/Projects.tsx`.
+3. Add project images to `public/` and reference them as `image: '/filename.png'` in `components/Projects.tsx`.
+4. Adjust colors/styles in `app/globals.css` and `tailwind.config.js`.
+5. Update site metadata in `app/layout.tsx`.
 
-## Build for Production
+## Scripts
 
 ```bash
+npm run dev
 npm run build
-npm start
+npm run start
+npm run lint
 ```
-
-## License
-
-MIT
-

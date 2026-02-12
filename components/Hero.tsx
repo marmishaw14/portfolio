@@ -21,11 +21,11 @@ export default function Hero() {
             <p className="text-xl md:text-3xl text-gray-200 mb-8">
               Software Developer and Community Builder
             </p>
-            <p className="text-xl md:text-3xl text-gray-200 mb-8">
-              Summer 2026 Internship (SWE)
+            <p className="text-xl md:text-2xl text-gray-200 mb-8">
+              Seeking Summer 2026 SWE Internships
             </p>
-            <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto lg:mx-0">
-              I ship software for non-profits and small businesses, and I build developer communities.
+            <p className="text-xl text-white-400 mb-12 max-w-2xl mx-auto lg:mx-0">
+              I build software and communities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
