@@ -79,14 +79,14 @@ export default function Hero() {
                   <div className="rounded-lg border border-white/15 bg-black/80 p-3 text-md text-white shadow-xl backdrop-blur">
                     <p className="font-bold">Cansbridge Scholars</p>
                     <p className="mt-1 text-white/70">
-                      Meraki Cohort
+                      Meraki Cohort (Fall 2025)
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mt-8 text-white text-center max-w-md">
-              Application Development and Delivery Student
+            <h2 className="text-3xl md:text-3xl font-bold mt-8 text-white text-center max-w-md">
+              Application Development and Delivery @ RRC Polytechnic
             </h2>
           </div>
         </div>

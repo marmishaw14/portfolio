@@ -13,7 +13,7 @@ const projects: Project[] = [
   {
     title: 'QuantDog',
     description:
-      'A modern web application built with React and TypeScript. Features include real-time updates, responsive design, and seamless user experience.',
+      'Intelligent quantum threat detection and adaptive cryptographic routing platform that protects cryptocurrency transactions from evolving quantum computer attacks.',
     technologies: ['React', 'TypeScript', 'Tailwind CSS'],
     link: 'https://devpost.com/software/quantdog',
     github: '#',
