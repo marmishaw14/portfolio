@@ -26,13 +26,43 @@ export default function Hero() {
             <p className="text-xl md:text-2xl text-gray-200 mb-8">
               Seeking Summer 2026 SWE Internships
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
               <a
                 href="#projects"
                 className="px-8 py-3 bg-primary-100 text-black rounded-lg transition-colors font-semibold"
               >
                 View My Work
               </a>
+              <div className="flex items-center gap-3">
+                {[
+                  {
+                    src: '/logos/github_logo.png',
+                    alt: 'GitHub',
+                    href: 'https://github.com/marmishaw14',
+                    size: 'h-7 w-7',
+                  },
+                  { src: '/logos/linkedin_logo.png', alt: 'LinkedIn', href: 'https://www.linkedin.com/in/mccauley-armishaw/' },
+                  { src: '/logos/substack.png', alt: 'Substack', href: 'https://substack.com/@mccauleyarmishaw' },
+                  { src: '/logos/x_logo.png', alt: 'X', href: 'https://x.com/mccauleycodes' },
+                ].map((logo) => (
+                  <a
+                    key={logo.alt}
+                    href={logo.href}
+                    className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 transition-colors hover:border-white/40 hover:bg-white/10"
+                    aria-label={logo.alt}
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={22}
+                      height={22}
+                      className={`object-contain opacity-80 transition-opacity group-hover:opacity-100 ${
+                        logo.size ?? 'h-5 w-5'
+                      }`}
+                    />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
