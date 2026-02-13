@@ -16,7 +16,7 @@ export default function AnimatedGridPatternDemo({
       )}
     >
       <AnimatedGridPattern
-        numSquares={30}
+        numSquares={50}
         maxOpacity={0.1}
         duration={3}
         repeatDelay={1}
