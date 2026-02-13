@@ -52,11 +52,11 @@ export default function Navigation() {
             >
               Projects
             </button>
-            <button
-              onClick={() => scrollToSection('blogs')}
+                        <button
+              onClick={() => scrollToSection('projects')}
               className="text-gray-300"
             >
-              Blogs
+              Experience
             </button>
           </div>
         </div>

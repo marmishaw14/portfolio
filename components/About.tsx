@@ -12,14 +12,14 @@ export default function About() {
           About Me
         </h2>
         <div className="prose prose-lg mx-auto">
-          <p className="text-gray-300 text-lg leading-relaxed mb-4">
-            I'm a passionate developer with a love for creating innovative web
-            solutions. With expertise in modern web technologies, I bring ideas
-            to life through clean, efficient code and thoughtful design.
+          <p className="text-white-300 text-xl font-bold leading-relaxed mb-4">
+            I'm a software developer and a final year Application Development and Delivery student from RRC Polytechnic.
+
+            I'm a proven leader and love building developer communities.
           </p>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-white-300 text-xl font-bold leading-relaxed">
             When I'm not pushing code to GitHub, you can find me at a coffee shop,
-            contributing to open-source projects, or doom scrolling on X.
+            building Gundam model kits, or doom scrolling on X.
           </p>
         </div>
       </div>
