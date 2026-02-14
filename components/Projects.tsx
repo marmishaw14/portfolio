@@ -37,6 +37,15 @@ const projects: Project[] = [
     github: '#',
     image: '/in_progress.jpg'
   },
+  {
+    title: 'ComparaVision',
+    description:
+      'A platform for the comparison of visual models (VLMs).',
+    technologies: ['TypeScript', 'Supabase', 'Runpod', 'Python', 'Node.js', 'MongoDB'],
+    link: 'https://devpost.com/software/comparavision',
+    github: 'https://github.com/orgs/HacktheSix/repositories',
+    image: '/comparavision.png'
+  },
 ]
 
 export default function Projects() {
