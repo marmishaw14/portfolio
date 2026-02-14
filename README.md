@@ -37,22 +37,19 @@ portfolio-website/
 │   ├── layout.tsx
 │   └── page.tsx
 ├── components/
+│   ├── ui/
+│   │   ├── animated-grid-pattern.tsx
+│   │   └── shine-border.tsx
 │   ├── About.tsx
-│   ├── Blogs.tsx
+│   ├── AnimatedGridPatternDemo.tsx
+│   ├── Experience.tsx
 │   ├── Hero.tsx
 │   ├── Navigation.tsx
 │   └── Projects.tsx
-└── public/
-    └── (images and static assets)
+├── lib/
+├── public/
+│   └── (images and static assets)
 ```
-
-## Customization
-
-1. Update hero/about copy in `components/Hero.tsx` and `components/About.tsx`.
-2. Update project cards in `components/Projects.tsx`.
-3. Add project images to `public/` and reference them as `image: '/filename.png'` in `components/Projects.tsx`.
-4. Adjust colors/styles in `app/globals.css` and `tailwind.config.js`.
-5. Update site metadata in `app/layout.tsx`.
 
 ## Scripts
 
