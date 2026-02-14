@@ -27,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${gloock.variable} ${raleway.variable}`}>
-        {children}
+        <div className="relative min-h-screen overflow-hidden">
+          <div className="relative z-10">{children}</div>
+        </div>
       </body>
     </html>
   )

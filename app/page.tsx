@@ -2,7 +2,7 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Projects from '@/components/Projects'
 import Navigation from '@/components/Navigation'
-import Blogs from '@/components/Blogs'
+import Experience from '@/components/Experience'
 
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
+      <Experience />
       <Projects />
-      <Blogs />
     </main>
   )
 }
