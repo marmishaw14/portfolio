@@ -26,6 +26,7 @@ const projects: Project[] = [
     technologies: ['Next.js', 'TypeScript', 'Node.js'],
     link: '#',
     github: '#',
+    image: '/wpg_transit.png'
   },
   {
     title: 'Project Three',
@@ -41,7 +42,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-[#1e1e1e]"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-transparent"
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-white">
