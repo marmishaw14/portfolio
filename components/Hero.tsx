@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { ShineBorder } from '@/components/ui/shine-border'
+import AnimatedGridPatternDemo from '@/components/AnimatedGridPatternDemo'
 
 export default function Hero() {
   const [imageError, setImageError] = useState(false)
@@ -12,6 +13,7 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen overflow-hidden px-4 pt-16 sm:px-6 lg:px-8"
     >
+      <AnimatedGridPatternDemo className="opacity-80" />
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}

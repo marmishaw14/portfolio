@@ -16,12 +16,12 @@ export default function AnimatedGridPatternDemo({
       )}
     >
       <AnimatedGridPattern
-        numSquares={50}
-        maxOpacity={0.1}
-        duration={3}
+        numSquares={100}
+        maxOpacity={0.3}
+        duration={1}
         repeatDelay={1}
         className={cn(
-          'mask-[radial-gradient(500px_circle_at_center,white,transparent)]',
+          'mask-[radial-gradient(700px_circle_at_center,white,transparent)]',
           'absolute inset-x-0 inset-y-[-30%] h-[200%] skew-y-12'
         )}
       />
