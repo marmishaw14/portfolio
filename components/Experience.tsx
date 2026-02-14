@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import AnimatedGridPatternDemo from './AnimatedGridPatternDemo'
 
 type Experience = {
   title: string
@@ -14,7 +13,7 @@ const experiences: Experience[] = [
   {
     title: 'Software Developer',
     organization: 'All Things Linux',
-    description: 'Developing tools and applications for the largest Linux Discord community',
+    description: 'Developing tools and applications for the largest Linux community on Discord (20,000+ users).',
     duration: 'Apr 2025 - Present',
     location: 'Charlotte, NC (Remote)',
     logo: '/logos/all_things_linux.png',
@@ -22,15 +21,15 @@ const experiences: Experience[] = [
   {
     title: 'Developer Relations',
     organization: 'Builders League',
-    description: 'dhdhdhdh',
+    description: "Hosted hackathons and connected with developer communities.",
     duration: 'July 2025 - January 2026',
-    location: 'Winnipeg, MB',
+    location: 'Winnipeg, MB (On-site)',
     logo: '/logos/builders_league_logo.png',
   },
   {
     title: 'Director of Sponsorships',
     organization: 'Canadian University Software Engineering Conference 2026',
-    description: 'dhdhdhdh',
+    description: "Promoted to Director of Sponsorships from Sponsorship team to lead communication between event sponsors and representatives.",
     duration: 'November 2025 - January 2026',
     location: 'Montreal, QC (Hybrid)',
     logo: '/logos/cusec_2026_logo.jpeg',
@@ -38,18 +37,42 @@ const experiences: Experience[] = [
   {
     title: 'Scholar',
     organization: 'Cansbridge Scholars',
-    description: 'dhdhdhdh',
+    description: 'Learned the ropes of intrapreneurship and entrepreneurship with a community of ambitious, brave, and kind individuals.',
     duration: 'September 2025 - Present',
     location: 'San Francisco, CA (Remote)',
     logo: '/logos/cansbridge.jpg',
   },
   {
-    title: 'Treasurer',
+    title: 'Treasurer & Web Developer',
     organization: 'Bits and Bytes Association',
-    description: 'dhdhdhdh',
+    description: "Managing the club's finances and securing financial partnerships. Also currently maintaining the club website.",
     duration: 'December 2025 - Present',
     location: 'Winnipeg, MB',
     logo: '/logos/bits_and_bytes_logo.png',
+  },
+  {
+    title: 'President',
+    organization: 'Bits and Bytes Association',
+    description: "Led and directed the BBA's vision and initiatives for the Winter 2025 and Fall 2025 terms.",
+    duration: 'December 2024 - December 2025',
+    location: 'Winnipeg, MB',
+    logo: '/logos/bits_and_bytes_logo.png',
+  },
+  {
+    title: 'Vice President',
+    organization: 'Bits and Bytes Association',
+    description: "Collaborated closely with the President for effective execution of the BBA's goals.",
+    duration: 'December 2023 - July 2024',
+    location: 'Winnipeg, MB',
+    logo: '/logos/bits_and_bytes_logo.png',
+  },
+  {
+    title: "President's Student Leadership Program Fellow",
+    organization: 'James W. Burns Leadership Institute (Asper School of Business)',
+    description: "Selected as 1 of 20 post-secondary students to participate in the University of Manitoba's President's Student Leadership Program Fellowship.",
+    duration: 'April 2025 - Present',
+    location: 'Winnipeg, MB',
+    logo: '/logos/asper_logo.png',
   },
 ]
 
