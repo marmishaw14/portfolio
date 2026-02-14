@@ -6,6 +6,7 @@ Personal portfolio site built with Next.js 14, TypeScript, and Tailwind CSS.
 
 - `Home` (`components/Hero.tsx`)
 - `About` (`components/About.tsx`)
+- `Experience` (`components/Experience.tsx`)
 - `Projects` (`components/Projects.tsx`)
 - Top navigation (`components/Navigation.tsx`)
 
