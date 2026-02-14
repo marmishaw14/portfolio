@@ -47,16 +47,16 @@ export default function Navigation() {
               About
             </button>
             <button
-              onClick={() => scrollToSection('projects')}
+              onClick={() => scrollToSection('experience')}
               className="text-gray-300"
             >
-              Projects
+              Experience
             </button>
                         <button
               onClick={() => scrollToSection('projects')}
               className="text-gray-300"
             >
-              Experience
+              Projects
             </button>
           </div>
         </div>
