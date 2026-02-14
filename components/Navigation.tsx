@@ -30,31 +30,31 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold text-white">
+          <div className="text-xl font-bold text-white-300">
             McCauley Armishaw
           </div>
           <div className="hidden md:flex space-x-8">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-gray-300"
+              className="text-white-300 font-semibold"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className="text-gray-300"
+              className="text-white-300 font-semibold"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('experience')}
-              className="text-gray-300"
+              className="text-white-300 font-semibold"
             >
               Experience
             </button>
                         <button
               onClick={() => scrollToSection('projects')}
-              className="text-gray-300"
+              className="text-white-300 font-semibold"
             >
               Projects
             </button>
