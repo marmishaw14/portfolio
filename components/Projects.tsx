@@ -22,19 +22,20 @@ const projects: Project[] = [
   {
     title: 'Winnipeg Transit But Better',
     description:
-      'Winnipeg Transit departures and arrivals with enhanced analytics.',
+      'Winnipeg Transit departures and arrivals with enhanced analytics. Currently still in development.',
     technologies: ['HTML/CSS', 'TypeScript', 'Cloudflare Tunnel', 'Docker'],
-    link: '#',
+    link: 'https://bettertransit.mccauleyarmishaw.com',
     github: 'https://github.com/marmishaw14/winnipeg-transit-but-better',
     image: '/wpg_transit.png'
   },
   {
-    title: 'Project Three',
+    title: 'Digital Ocean Gradient AI Hackathon Submission',
     description:
-      'Mobile-responsive dashboard with data visualization and analytics. Clean UI with intuitive navigation and powerful features.',
-    technologies: ['React', 'TypeScript', 'Chart.js'],
+      'This project is currently in progress. Check back later for updates.',
+    technologies: ['DigitalOcean'],
     link: '#',
     github: '#',
+    image: '/in_progress.jpg'
   },
 ]
 
@@ -48,11 +49,11 @@ export default function Projects() {
         <h2 className="text-4xl font-bold text-center mb-12 text-white">
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-8 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))] justify-items-center">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-[#2a2a2a] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-700"
+              className="w-full max-w-sm bg-[#2a2a2a] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-700"
             >
               {project.image ? (
                 <Image
