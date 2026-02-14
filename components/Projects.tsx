@@ -14,18 +14,18 @@ const projects: Project[] = [
     title: 'QuantDog',
     description:
       'Intelligent quantum threat detection and adaptive cryptographic routing platform that protects cryptocurrency transactions from evolving quantum computer attacks.',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
+    technologies: ['FastAPI', 'Node.js', 'Python', 'WebSocket', 'React', 'TypeScript', 'UV', 'Vite'],
     link: 'https://devpost.com/software/quantdog',
-    github: '#',
+    github: 'https://github.com/boshyxd/QuantDog',
     image: '/quantdog.png',
   },
   {
     title: 'Winnipeg Transit But Better',
     description:
-      'Full-stack application with authentication, database integration, and API endpoints. Built with Next.js and modern best practices.',
-    technologies: ['Next.js', 'TypeScript', 'Node.js'],
+      'Winnipeg Transit departures and arrivals with enhanced analytics.',
+    technologies: ['HTML/CSS', 'TypeScript', 'Cloudflare Tunnel', 'Docker'],
     link: '#',
-    github: '#',
+    github: 'https://github.com/marmishaw14/winnipeg-transit-but-better',
     image: '/wpg_transit.png'
   },
   {
@@ -76,7 +76,7 @@ export default function Projects() {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-primary-900/50 text-primary-300 text-sm rounded-full border border-primary-700"
+                      className="px-3 py-1 bg-purple-900/50 text-purple-100 text-sm rounded-full border border-purple-700"
                     >
                       {tech}
                     </span>
@@ -85,7 +85,7 @@ export default function Projects() {
                 <div className="flex gap-4">
                   <a
                     href={project.link}
-                    className="text-primary-400 hover:text-primary-300 hover:underline font-semibold"
+                    className="text-purple-500 hover:text-orange-300 hover:underline font-semibold"
                   >
                     Live Demo →
                   </a>
