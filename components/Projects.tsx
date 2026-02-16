@@ -46,6 +46,14 @@ const projects: Project[] = [
     github: 'https://github.com/orgs/HacktheSix/repositories',
     image: '/comparavision.png'
   },
+  {
+    title: 'Burnout Risk Monitoring Platform',
+    description:
+      'A platform that aids in catching burnout in healthcare professionals.',
+    technologies: ['TypeScript', 'Supabase', 'Node.js', 'Fastify'],
+    link: '#',
+    github: 'https://github.com/marmishaw14/burnout_risk_monitoring_platform',
+  },
 ]
 
 export default function Projects() {
