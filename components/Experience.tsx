@@ -12,6 +12,14 @@ type Experience = {
 const experiences: Experience[] = [
   {
     title: 'Software Developer',
+    organization: 'Stealth Startup',
+    description: 'Developing healthcare stuff.',
+    duration: 'Feb 2026 - Present',
+    location: 'Toronto, ON (Remote)',
+    logo: '/logos/stealth_logo.jpeg',
+  },
+  {
+    title: 'Software Developer',
     organization: 'All Things Linux',
     description: 'Developing tools and applications for the largest Linux community on Discord (20,000+ users).',
     duration: 'Apr 2025 - Present',
