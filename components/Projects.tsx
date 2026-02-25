@@ -13,7 +13,7 @@ const projects: Project[] = [
   {
     title: 'QuantDog',
     description:
-      'Intelligent quantum threat detection and adaptive cryptographic routing platform that protects cryptocurrency transactions from evolving quantum computer attacks.',
+      'Intelligent quantum threat detection and adaptive cryptographic routing platform that protects cryptocurrency transactions from evolving quantum computer attacks. SpurHacks 2025 Winner. ($7,000)',
     technologies: ['FastAPI', 'Node.js', 'Python', 'WebSocket', 'React', 'TypeScript', 'UV', 'Vite'],
     link: 'https://devpost.com/software/quantdog',
     github: 'https://github.com/boshyxd/QuantDog',
@@ -40,7 +40,7 @@ const projects: Project[] = [
   {
     title: 'ComparaVision',
     description:
-      'A platform for the comparison of visual models (VLMs).',
+      'A platform for the comparison of visual models (VLMs). Hack the 6ix 2025 Submission.',
     technologies: ['TypeScript', 'Supabase', 'Runpod', 'Python', 'Node.js', 'MongoDB'],
     link: 'https://devpost.com/software/comparavision',
     github: 'https://github.com/orgs/HacktheSix/repositories',
@@ -53,6 +53,15 @@ const projects: Project[] = [
     technologies: ['TypeScript', 'Supabase', 'Node.js', 'Fastify'],
     link: '#',
     github: 'https://github.com/marmishaw14/burnout_risk_monitoring_platform',
+  },
+  {
+    title: 'Manufacturing Regulatory Compliance Chatbot',
+    description:
+      'A chatbot to aid manufacturing teams with regulatory compliance. Southern Manitoba Tech Conference 2026 Submission.',
+    technologies: ['React', 'Tailwind', 'Supabase', 'Flask', 'OpenAI', 'QDrant', 'Flask', 'LlamaIndex'],
+    link: 'https://terrific-vision-production-6ebe.up.railway.app/',
+    github: 'https://github.com/tadghh/reg-compliance-chatbot',
+    image: '/complaince.jpg'
   },
 ]
 
