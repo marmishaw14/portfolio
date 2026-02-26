@@ -79,7 +79,7 @@ export default function Hero() {
                 <div className="relative z-10 h-full w-full overflow-hidden rounded-[calc(0.5rem-3px)]">
                 {!imageError ? (
                   <Image
-                    src="/fr3sh_pfp.jpg"
+                    src="/mccauley-avatar.jpg"
                     alt="McCauley"
                     width={500}
                     height={500}
