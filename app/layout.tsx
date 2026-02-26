@@ -17,6 +17,10 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: 'McCauley Armishaw',
   description: 'Personal portfolio website',
+  icons: {
+    icon: '/fr3sh_pfp.jpg',
+    apple: '/fr3sh_pfp.jpg',
+  },
 }
 
 export default function RootLayout({
