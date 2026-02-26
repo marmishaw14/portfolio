@@ -22,7 +22,7 @@ const projects: Project[] = [
   {
     title: 'Winnipeg Transit But Better',
     description:
-      'Winnipeg Transit departures and arrivals with enhanced analytics. Currently still in development.',
+      'Winnipeg Transit departures and arrivals with enhanced analytics. Currently still in development making occasional updates.',
     technologies: ['HTML/CSS', 'TypeScript', 'Cloudflare Tunnel', 'Docker'],
     link: 'https://bettertransit.mccauleyarmishaw.com',
     github: 'https://github.com/marmishaw14/winnipeg-transit-but-better',

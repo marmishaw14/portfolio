@@ -11,14 +11,14 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden px-4 pt-16 sm:px-6 lg:px-8"
+      className="relative min-h-screen overflow-hidden pt-16"
     >
       <AnimatedGridPatternDemo className="opacity-80" />
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center">
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r text-white text-white bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r text-white bg-clip-text text-transparent">
               Hi, I'm McCauley.
             </h1>
             <p className="text-xl md:text-3xl text-gray-200 mb-8">
@@ -29,10 +29,10 @@ export default function Hero() {
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
               <a
-                href="#projects"
+                href="mailto:mtarmishaw14@gmail.com"
                 className="px-8 py-3 bg-primary-100 text-black rounded-lg transition-colors font-semibold"
               >
-                View My Work
+                Contact Me
               </a>
               <div className="flex items-center gap-3">
                 {[
@@ -68,7 +68,7 @@ export default function Hero() {
           </div>
 
           {/* Right side - Image and headline */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center lg:items-start lg:pl-24 xl:pl-40">
             <div className="relative w-full max-w-md">
               <div className="relative aspect-square rounded-lg bg-gray-800 p-[3px] shadow-2xl">
                 <ShineBorder
