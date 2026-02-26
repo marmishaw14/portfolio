@@ -79,37 +79,41 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="w-full max-w-sm bg-[#2a2a2a] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-700"
+              className="w-full max-w-sm bg-[#2a2a2a] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-700 flex flex-col"
             >
-              {project.image ? (
-                <Image
-                  src={project.image}
-                  alt={`${project.title} preview`}
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto"
-                />
-              ) : (
-                <div className="h-56 bg-gradient-to-br from-primary-500 to-primary-200"></div>
-              )}
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">
-                  {project.title}
-                </h3>
-                <p className="text-gray-300 mb-4">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 bg-purple-900/50 text-purple-100 text-sm rounded-full border border-purple-700"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+              <div className="relative w-full h-56">
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 384px, (min-width: 640px) 50vw, 100vw"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-primary-500 to-primary-200" />
+                )}
+              </div>
+              <div className="flex flex-col flex-1 p-6">
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold mb-2 text-white">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-300 mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-purple-900/50 text-purple-100 text-sm rounded-full border border-purple-700"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-4 mt-2">
                   <a
                     href={project.link}
                     className="text-purple-500 hover:text-orange-300 hover:underline font-semibold"
