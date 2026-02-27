@@ -49,7 +49,7 @@ const projects: Project[] = [
   {
     title: 'Burnout Risk Monitoring Platform',
     description:
-      'A platform that aids in catching burnout in healthcare professionals.',
+      'A platform that aids in catching burnout in healthcare professionals. Currently still in development.',
     technologies: ['TypeScript', 'Supabase', 'Node.js', 'Fastify'],
     link: '#',
     github: 'https://github.com/marmishaw14/burnout_risk_monitoring_platform',
