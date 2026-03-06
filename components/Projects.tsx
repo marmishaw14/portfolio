@@ -47,14 +47,6 @@ const projects: Project[] = [
     image: '/comparavision.png'
   },
   {
-    title: 'Burnout Risk Monitoring Platform',
-    description:
-      'A platform that aids in catching burnout in healthcare professionals. Currently still in development.',
-    technologies: ['TypeScript', 'Supabase', 'Node.js', 'Fastify'],
-    link: '#',
-    github: 'https://github.com/marmishaw14/burnout_risk_monitoring_platform',
-  },
-  {
     title: 'Manufacturing Regulatory Compliance Chatbot',
     description:
       'A chatbot to aid manufacturing teams with regulatory compliance. Southern Manitoba Tech Conference 2026 Submission.',
