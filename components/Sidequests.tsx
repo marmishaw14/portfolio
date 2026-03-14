@@ -28,67 +28,79 @@ const sidequests: Sidequest[] = [
     images: ['/hackathons-sidequests/sprint2025.jpg', '/hackathons-sidequests/sprint2025-02.jpg', 'hackathons-sidequests/sprint2025-03.jpg','hackathons-sidequests/sprint2025-04.jpg'],
     status: '1st Place ($5,000)',
     imageFit: 'cover',
-    imageFrameClassName: 'w-80 md:w-[28rem]',
+    imageFrameClassName: 'w-80 md:w-[28rem]'
+  },
+  {
+    title: '.devHacks 2025',
+    location: 'Winnipeg, MB',
+    images: ['/hackathons-sidequests/devhacks2025-01.jpg', '/hackathons-sidequests/devhacks2025-02.jpg', '/hackathons-sidequests/devhacks2025-03.jpg'],
+    status: 'Participated'
   },
   {
     title: 'Winnipeg Open Data Datathon 2025',
     location: 'Winnipeg, MB',
     images: ['/hackathons-sidequests/datathon2025.jpg','/hackathons-sidequests/datathon2025-02.jpg', '/hackathons-sidequests/datathon2025-03.jpg','/hackathons-sidequests/datathon2025-04.jpg'],
-    status: 'Participated',
+    status: 'Participated'
+  },
+  {
+    title: 'UMCSSA Capture the Flag 2025',
+    location: 'Winnipeg, MB',
+    images: ['/hackathons-sidequests/umcssa-ctf-01.jpg','/hackathons-sidequests/umcssa-ctf-02.jpg'],
+    status: 'Participated'
   },
   {
     title: 'RampUp Weekend 2025',
     location: 'Winnipeg, MB',
     images: ['/hackathons-sidequests/rampup2025.jpg','/hackathons-sidequests/rampup2025-02.jpg', '/hackathons-sidequests/rampup2025-03.jpg'],
-    status: 'Finalists',
+    status: 'Finalists'
   },
   {
     title: 'SpurHacks 2025',
     location: 'Waterloo, ON',
     images: ['/hackathons-sidequests/spurhacks2025.jpg', '/hackathons-sidequests/spurhacks2025-02.jpg', '/hackathons-sidequests/spurhacks2025-03.jpg'],
-    status: 'Best Web3 and Best Quantum Startup ($7,000)',
+    status: 'Best Web3 and Best Quantum Startup ($7,000)'
   },
   {
     title: 'Hack 404 2025',
     location: 'Toronto, ON',
     images: ['/hackathons-sidequests/hack404.jpeg'],
-    status: 'Participated',
+    status: 'Participated'
   },
   {
     title: 'Hack the 6ix 2025',
     location: 'Toronto, ON',
     images: ['/hackathons-sidequests/hackthe6ix.jpeg'],
-    status: 'Participated',
+    status: 'Participated'
   },
   {
     title: 'San Francisco Tech Week 2025',
     location: 'San Francisco, CA',
     images: ['/hackathons-sidequests/sftechweek-01.jpg', '/hackathons-sidequests/sftechweek-02.jpg', '/hackathons-sidequests/sftechweek-03.jpg','/hackathons-sidequests/sftechweek-04.jpg','/hackathons-sidequests/sftechweek-05.jpg','/hackathons-sidequests/sftechweek-06.jpg', '/hackathons-sidequests/sftechweek-00.jpg'],
-    status: 'Life changing trip :)',
+    status: 'Life changing trip :)'
   },
   {
     title: 'Cansbridge Scholars',
     location: 'Toronto, ON',
     images: ['/hackathons-sidequests/cansbridge-ace-2025.jpg'],
-    status: 'Meraki Cohort (Fall 2025)',
+    status: 'Meraki Cohort (Fall 2025)'
   },
   {
     title: 'Winnipeg Stupid Hackathon 2025',
     location: 'Winnipeg, MB',
     images: ['/hackathons-sidequests/winnipeg-stupid-hackathon-2025.jpg','/hackathons-sidequests/winnipeg-stupid-hackathon-2025-02.jpg'],
-    status: 'Hosted and Organized',
+    status: 'Hosted and Organized'
   },
   {
     title: 'Southern Manitoba Tech Conference Hackathon 2026',
     location: 'Winnipeg, MB',
     images: ['/hackathons-sidequests/southernmbtechconf.png', '/hackathons-sidequests/southernmbtechconf.jpeg',],
-    status: 'Participated',
+    status: 'Participated'
   },
   {
     title: 'Winnipeg Open Data Datathon 2026',
     location: 'Winnipeg, MB',
     images: ['/hackathons-sidequests/datathon2026.jpeg'],
-    status: '1st Place',
+    status: '1st Place'
   },
 ]
 
