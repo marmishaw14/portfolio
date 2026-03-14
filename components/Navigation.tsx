@@ -1,9 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +17,16 @@ export default function Navigation() {
   }, [])
 
   const scrollToSection = (id: string) => {
+    if (id === 'sidequests') {
+      router.push('/sidequests')
+      return
+    }
+
+    if (pathname !== '/') {
+      router.push(`/#${id}`)
+      return
+    }
+
     const element = document.getElementById(id)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
@@ -52,7 +65,13 @@ export default function Navigation() {
             >
               Experience
             </button>
-                        <button
+            <button
+              onClick={() => scrollToSection('sidequests')}
+              className="text-white-300 font-semibold"
+            >
+              Sidequests
+            </button>
+            <button
               onClick={() => scrollToSection('projects')}
               className="text-white-300 font-semibold"
             >
