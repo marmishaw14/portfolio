@@ -23,6 +23,8 @@ interface PixelImageProps {
   src: string
   grid?: PredefinedGridKey
   customGrid?: Grid
+  frameClassName?: string
+  objectFit?: "cover" | "contain"
   grayscaleAnimation?: boolean
   pixelFadeInDuration?: number // in ms
   maxAnimationDelay?: number // in ms
@@ -32,6 +34,8 @@ interface PixelImageProps {
 export const PixelImage = ({
   src,
   grid = "6x4",
+  frameClassName,
+  objectFit = "cover",
   grayscaleAnimation = true,
   pixelFadeInDuration = 1000,
   maxAnimationDelay = 1200,
@@ -91,7 +95,7 @@ export const PixelImage = ({
   }, [rows, cols, maxAnimationDelay])
 
   return (
-    <div className="relative h-72 w-72 select-none md:h-96 md:w-96">
+    <div className={cn("relative h-72 w-72 select-none md:h-96 md:w-96", frameClassName)}>
       {pieces.map((piece, index) => (
         <div
           key={index}
@@ -109,7 +113,8 @@ export const PixelImage = ({
             src={src}
             alt={`Pixel image piece ${index + 1}`}
             className={cn(
-              "z-1 h-full w-full rounded-[2.5rem] object-cover",
+              "z-1 h-full w-full rounded-[2.5rem]",
+              objectFit === "contain" ? "bg-black/25 object-contain" : "object-cover",
               grayscaleAnimation && (showColor ? "grayscale-0" : "grayscale")
             )}
             style={{
