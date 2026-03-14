@@ -75,7 +75,7 @@ const sidequests: Sidequest[] = [
   {
     title: 'San Francisco Tech Week 2025',
     location: 'San Francisco, CA',
-    images: ['/hackathons-sidequests/sftechweek-01.jpg', '/hackathons-sidequests/sftechweek-02.jpg', '/hackathons-sidequests/sftechweek-03.jpg','/hackathons-sidequests/sftechweek-04.jpg','/hackathons-sidequests/sftechweek-05.jpg','/hackathons-sidequests/sftechweek-06.jpg', '/hackathons-sidequests/sftechweek-00.jpg'],
+    images: ['/hackathons-sidequests/sftechweek-01.jpg', '/hackathons-sidequests/sftechweek-02.jpg', '/hackathons-sidequests/sftechweek-03.jpg','/hackathons-sidequests/sftechweek-04.jpg','/hackathons-sidequests/sftechweek-05.jpg','/hackathons-sidequests/sftechweek-06.jpg', '/hackathons-sidequests/sftechweek-07.jpg'],
     status: 'Life changing trip :)'
   },
   {
