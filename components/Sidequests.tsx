@@ -69,7 +69,7 @@ const sidequests: Sidequest[] = [
   {
     title: 'Hack the 6ix 2025',
     location: 'Toronto, ON',
-    images: ['/hackathons-sidequests/hackthe6ix.jpeg'],
+    images: ['/hackathons-sidequests/hackthe6ix.jpeg', '/hackathons-sidequests/hackthe6ix_2.jpg', '/hackathons-sidequests/hackthe6ix_3.jpg', '/hackathons-sidequests/hackthe6ix_4.jpg'],
     status: 'Participated'
   },
   {
@@ -81,7 +81,7 @@ const sidequests: Sidequest[] = [
   {
     title: 'Cansbridge Scholars',
     location: 'Toronto, ON',
-    images: ['/hackathons-sidequests/cansbridge-ace-2025.jpg'],
+    images: ['/hackathons-sidequests/cansbridge-ace-2025.jpg', '/hackathons-sidequests/cansbridge-ace-2025-2.jpg', '/hackathons-sidequests/cansbridge-ace-2025-3.jpg'],
     status: 'Meraki Cohort (Fall 2025)'
   },
   {
@@ -89,6 +89,12 @@ const sidequests: Sidequest[] = [
     location: 'Winnipeg, MB',
     images: ['/hackathons-sidequests/winnipeg-stupid-hackathon-2025.jpg','/hackathons-sidequests/winnipeg-stupid-hackathon-2025-02.jpg'],
     status: 'Hosted and Organized'
+  },
+  {
+    title: 'Canadian University Software Engineering Conference 2026 (CUSEC)',
+    location: 'Montreal, QC',
+    images: ['/hackathons-sidequests/cusec-2026-1.jpg', '/hackathons-sidequests/cusec-2026-2.jpg', '/hackathons-sidequests/cusec-2026-3.jpg', '/hackathons-sidequests/cusec-2026-4.jpg', '/hackathons-sidequests/cusec-2026-5.jpg'],
+    status: 'Organizer'
   },
   {
     title: 'Southern Manitoba Tech Conference Hackathon 2026',
