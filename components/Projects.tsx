@@ -29,15 +29,6 @@ const projects: Project[] = [
     image: '/wpg_transit.png'
   },
   {
-    title: 'Digital Ocean Gradient AI Hackathon Submission',
-    description:
-      'This project is currently in progress. Check back later for updates.',
-    technologies: ['DigitalOcean'],
-    link: '#',
-    github: '#',
-    image: '/in_progress.jpg'
-  },
-  {
     title: 'ComparaVision',
     description:
       'A platform for the comparison of visual models (VLMs). Hack the 6ix 2025 Submission.',
@@ -47,13 +38,31 @@ const projects: Project[] = [
     image: '/comparavision.png'
   },
   {
-    title: 'Manufacturing Regulatory Compliance Chatbot',
+    title: 'ComplAInce: Manufacturing Regulatory Compliance Chatbot',
     description:
       'A chatbot to aid manufacturing teams with regulatory compliance. Southern Manitoba Tech Conference 2026 Submission.',
     technologies: ['React', 'Tailwind', 'Supabase', 'Flask', 'OpenAI', 'QDrant', 'Flask', 'LlamaIndex'],
     link: 'https://terrific-vision-production-6ebe.up.railway.app/',
     github: 'https://github.com/tadghh/reg-compliance-chatbot',
     image: '/complaince.jpg'
+  },
+  {
+    title: 'SmartMap: Payroll Data Import Engine',
+    description:
+      'An import workflow for payroll timesheet data. It accepts flexible CSV/XLSX files, infers mappings to a canonical schema, normalizes and validates records, supports review decisions, and then imports approved rows.',
+    technologies: ['Node.js', 'HTML/CSS', 'TypeScript', 'Express.js', 'Joi', 'Multer', 'Codex', 'Figma Sites'],
+    link: '#',
+    github: 'https://github.com/marmishaw14/umcssa-technical-case-comp-2026',
+    image: '/smartmap.png'
+  },
+  {
+    title: 'ZoneSmart: National Zoning & Land Use Data Platform',
+    description:
+      'Full-stack platform for aggregating Canadian municipal zoning and land use data into a searchable, analyzable, open dataset.',
+    technologies: ['Flask(API)', 'React', 'TypeScript', 'Qdrant', 'Groq', 'Docker', 'Cloudflare Tunnel', 'BeautifulSoup', 'LangSmith'],
+    link: 'https://zoning-app.mccauleyarmishaw.com/',
+    github: 'https://github.com/MaxLan-dev/zoning-app',
+    image: '/hackathons-sidequests/zonesmart.png'
   },
 ]
 
