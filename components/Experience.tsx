@@ -11,12 +11,12 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
-    title: 'Software Developer',
-    organization: 'Stealth Startup',
-    description: 'Developing healthcare stuff.',
+    title: 'Venture Scout',
+    organization: 'Althra',
+    description: 'Seeking out early-stage startups in Manitoba and evaluating their potential for investment.',
     duration: 'Feb 2026 - Present',
-    location: 'Toronto, ON (Remote)',
-    logo: '/logos/stealth_logo.jpeg',
+    location: 'Winnipeg, MB (Remote)',
+    logo: '/logos/althra_logo.png',
   },
   {
     title: 'Software Developer',
