@@ -16,7 +16,7 @@ const experiences: Experience[] = [
     description: 'Seeking out early-stage startups in Manitoba and evaluating their potential for investment.',
     duration: 'Feb 2026 - Present',
     location: 'Winnipeg, MB (Remote)',
-    logo: '/logos/althra_logo.png',
+    logo: '/logos/althra_logo.jpeg',
   },
   {
     title: 'Software Developer',
