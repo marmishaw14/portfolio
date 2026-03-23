@@ -102,6 +102,18 @@ const sidequests: Sidequest[] = [
     images: ['/hackathons-sidequests/datathon2026.jpeg'],
     status: '1st Place'
   },
+  {
+    title: 'UMCSSA Design & Case Sprint 2026',
+    location: 'Winnipeg, MB',
+    images: ['/hackathons-sidequests/umcssa-design-case-sprint-2026.jpg'],
+    status: 'Participated'
+  },
+  {
+    title: 'FCI x LangChain: Building the Future Cities Hackathon',
+    location: 'Online',
+    images: ['/hackathons-sidequests/zonesmart.png'],
+    status: 'Participated'
+  },
 ]
 
 function SidequestImageCarousel({
