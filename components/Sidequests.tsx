@@ -25,10 +25,15 @@ const sidequests: Sidequest[] = [
   {
     title: 'Sprint to Innovate 2025',
     location: 'Winnipeg, MB',
-    images: ['/hackathons-sidequests/sprint2025.jpg', '/hackathons-sidequests/sprint2025-02.jpg', 'hackathons-sidequests/sprint2025-03.jpg','hackathons-sidequests/sprint2025-04.jpg'],
+    images: [
+      '/hackathons-sidequests/sprint2025.jpg',
+      '/hackathons-sidequests/sprint2025-02.jpg',
+      '/hackathons-sidequests/sprint2025-03.jpg',
+      '/hackathons-sidequests/sprint2025-04.jpg',
+    ],
     status: '1st Place ($5,000)',
     imageFit: 'cover',
-    imageFrameClassName: 'w-80 md:w-[28rem]'
+    imageFrameClassName: 'w-full max-w-[21rem] sm:max-w-[24rem] md:max-w-[28rem]',
   },
   {
     title: '.devHacks 2025',
@@ -135,7 +140,8 @@ function SidequestImageCarousel({
 }) {
   const [api, setApi] = useState<CarouselApi>()
   const [currentIndex, setCurrentIndex] = useState(0)
-  const resolvedFrameClassName = imageFrameClassName ?? 'w-80 md:w-[26rem]'
+  const resolvedFrameClassName =
+    imageFrameClassName ?? 'w-full max-w-[20rem] sm:max-w-[22rem] md:max-w-[26rem]'
 
   useEffect(() => {
     if (!api) return
@@ -177,8 +183,8 @@ function SidequestImageCarousel({
         </CarouselContent>
         {images.length > 1 && (
           <>
-            <CarouselPrevious className="left-2 border-white/20 bg-black/60 text-white hover:bg-black/80" />
-            <CarouselNext className="right-2 border-white/20 bg-black/60 text-white hover:bg-black/80" />
+            <CarouselPrevious className="left-2 hidden border-white/20 bg-black/60 text-white hover:bg-black/80 sm:inline-flex" />
+            <CarouselNext className="right-2 hidden border-white/20 bg-black/60 text-white hover:bg-black/80 sm:inline-flex" />
           </>
         )}
       </Carousel>
@@ -208,7 +214,7 @@ function SidequestImageCarousel({
 export default function Sidequests() {
 
   return (
-    <section id="sidequests" className="bg-transparent px-4 py-20 sm:px-6 lg:px-8">
+    <section id="sidequests" className="overflow-x-hidden bg-transparent px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12">
           <h2 className="text-4xl font-bold text-white">Hackathons & Sidequests</h2>
