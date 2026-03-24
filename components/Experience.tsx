@@ -95,18 +95,18 @@ export default function Experiences() {
               key={`${experience.organization}-${index}`}
               className="group rounded-2xl border border-white/10 bg-white/5 p-6 transition-colors open:border-white/30"
             >
-              <summary className="flex cursor-pointer list-none items-start justify-between gap-6">
-                <div className="flex items-start gap-4">
-                  <div className="mt-2.5 flex h-14 w-14 items-center justify-center overflow-hidden">
+              <summary className="flex cursor-pointer list-none items-start justify-between gap-3 sm:gap-6">
+                <div className="flex min-w-0 items-start gap-4">
+                  <div className="mt-2.5 flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden">
                     <Image
                       src={experience.logo}
                       alt={`${experience.organization} logo`}
                       width={32}
                       height={32}
-                      className="h-12 w-12 object-cover"
+                      className="h-12 w-12 rounded-md object-contain"
                     />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h3 className="text-xl font-regular">
                       {experience.title}
                     </h3>
@@ -116,7 +116,7 @@ export default function Experiences() {
                     </p>
                   </div>
                 </div>
-                <span className="mt-1 text-2xl text-white/60 transition-transform group-open:rotate-180">
+                <span className="mt-1 shrink-0 text-2xl text-white/60 transition-transform group-open:rotate-180">
                   ⌄
                 </span>
               </summary>
