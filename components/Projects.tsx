@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Script from 'next/script'
 
 type Project = {
   title: string
@@ -132,7 +133,11 @@ export default function Projects() {
             </div>
           ))}
         </div>
+        <div className="mt-12 flex justify-center">
+          <div data-webring="ca" data-member="mccauley-armishaw" />
+        </div>
       </div>
+      <Script src="https://webring.ca/embed.js" strategy="afterInteractive" />
     </section>
   )
 }
