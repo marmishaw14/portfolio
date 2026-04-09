@@ -25,7 +25,7 @@ export default function Hero() {
               Software Developer and Community Builder
             </p>
             <p className="text-xl md:text-2xl text-gray-200 mb-8">
-              Seeking Summer 2026 SWE Internships
+              Seeking Summer & Fall 2026 SWE Internships
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
               <a
