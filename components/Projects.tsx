@@ -21,6 +21,15 @@ const projects: Project[] = [
     image: '/quantdog.png',
   },
   {
+    title: 'Gundam Artillery and Combat Operations Management API',
+    description:
+      'RESTful API for managing a Gundam artillery.',
+    technologies: ['Node.js', 'Express', 'Docker', 'Joi', 'TypeScript', 'Cloudflare', 'Prometheus', 'Grafana'],
+    link: 'https://comp3018capstoneproj.mccauleyarmishaw.com/',
+    github: 'https://github.com/marmishaw14/comp-3018-capstone-project',
+    image: "/gundammk2.jpg"
+  },
+  {
     title: 'Winnipeg Transit But Better',
     description:
       'Winnipeg Transit departures and arrivals with enhanced analytics. Currently still in development making occasional updates.',
