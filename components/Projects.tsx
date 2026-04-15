@@ -24,7 +24,7 @@ const projects: Project[] = [
     title: 'Gundam Artillery and Combat Operations Management API',
     description:
       'RESTful API for managing a Gundam artillery.',
-    technologies: ['Node.js', 'Express', 'Docker', 'Joi', 'TypeScript', 'Cloudflare', 'Prometheus', 'Grafana'],
+    technologies: ['Node.js', 'Express', 'Docker', 'Joi', 'TypeScript', 'Cloudflare', 'Prometheus', 'Grafana', 'OpenAPI'],
     link: 'https://comp3018capstoneproj.mccauleyarmishaw.com/',
     github: 'https://github.com/marmishaw14/comp-3018-capstone-project',
     image: "/gundammk2.jpg"
