@@ -97,7 +97,7 @@ export default function Experiences() {
             >
               <summary className="flex cursor-pointer list-none items-start justify-between gap-3 sm:gap-6">
                 <div className="flex min-w-0 items-start gap-4">
-                  <div className="mt-2.5 flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center self-center overflow-hidden">
                     <Image
                       src={experience.logo}
                       alt={`${experience.organization} logo`}
@@ -111,14 +111,17 @@ export default function Experiences() {
                       {experience.title}
                     </h3>
                     <p className="text-white/70">{experience.organization}</p>
-                    <p className="mt-1 text-sm text-white/50">
-                      {experience.location} · {experience.duration}
-                    </p>
                   </div>
                 </div>
-                <span className="mt-1 shrink-0 text-2xl text-white/60 transition-transform group-open:rotate-180">
-                  ⌄
-                </span>
+                <div className="flex shrink-0 items-start gap-3 sm:gap-4">
+                  <div className="text-right">
+                    <p className="text-sm font-semibold text-white/70">{experience.duration}</p>
+                    <p className="text-sm text-white/50">{experience.location}</p>
+                  </div>
+                  <span className="mt-1 text-2xl text-white/60 transition-transform group-open:rotate-180">
+                    ⌄
+                  </span>
+                </div>
               </summary>
               <div className="mt-4 text-white/70">
                 {experience.description}
