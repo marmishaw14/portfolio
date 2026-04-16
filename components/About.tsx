@@ -10,7 +10,7 @@ export default function About() {
         </h2>
         <div className="prose prose-lg mx-auto">
           <p className="text-white-300 text-xl font-regular leading-relaxed mb-4">
-            I'm a software developer and a final year Application Development and Delivery student from RRC Polytechnic.
+            I'm a software developer and a final year Application Development and Delivery student at RRC Polytechnic.
 
             I'm a proven leader and love building developer communities.
           </p>
