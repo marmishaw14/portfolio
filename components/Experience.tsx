@@ -78,7 +78,7 @@ const experiences: Experience[] = [
     title: "President's Student Leadership Program Fellow",
     organization: 'James W. Burns Leadership Institute (Asper School of Business)',
     description: "Selected as 1 of 20 post-secondary students to participate in the University of Manitoba's President's Student Leadership Program Fellowship.",
-    duration: 'April 2025 - Present',
+    duration: 'April 2025 - April 2026',
     location: 'Winnipeg, MB',
     logo: '/logos/asper_logo.png',
   },
