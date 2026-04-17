@@ -11,6 +11,14 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
+    title: 'IT Business Analyst Summer Student',
+    organization: 'Manitoba Liquor and Lotteries Corporation',
+    description: 'Incoming Summer 2026 on the Architecture and Analysis team.',
+    duration: 'May 2026 - Present',
+    location: 'Winnipeg, MB',
+    logo: '/logos/althra_logo.jpeg',
+  },
+  {
     title: 'Venture Scout',
     organization: 'Althra',
     description: 'Seeking out early-stage startups in Manitoba and evaluating their potential for investment.',
