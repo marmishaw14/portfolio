@@ -124,7 +124,7 @@ export default function Hero() {
               </div>
             </div>
             <h2 className="text-3xl md:text-3xl font-bold mt-8 text-white text-center max-w-md">
-              Application Development and Delivery @ RRC Polytechnic
+              IT Business Analyst Summer Student @ Manitoba Liquor & Lotteries
             </h2>
           </div>
         </div>

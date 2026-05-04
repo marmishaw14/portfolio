@@ -12,7 +12,7 @@ export default function About() {
           <p className="text-white-300 text-xl font-regular leading-relaxed mb-4">
             I'm a software developer and a final year Application Development and Delivery student at RRC Polytechnic.
 
-            I'm a proven leader and love building developer communities.
+            I'm a proven leader and love building developer communities. Currently, I'm learning infrastructure through the basics of homelabbing and DevOps.
           </p>
           <p className="text-white-300 text-xl font-regular leading-relaxed">
             When I'm not pushing code to GitHub, you can find me at a coffee shop,
