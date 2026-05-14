@@ -1,0 +1,40 @@
+# Dependencies / build output
+node_modules
+.next
+out
+dist
+build
+coverage
+
+# VCS
+.git
+.gitignore
+
+# Docker / local tooling
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+.agents
+.codex
+
+# Logs / temp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+tmp
+.temp
+.cache
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# Env files you do NOT want in image context
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
