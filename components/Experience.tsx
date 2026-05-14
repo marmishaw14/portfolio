@@ -27,14 +27,6 @@ const experiences: Experience[] = [
     logo: '/logos/althra_logo.jpeg',
   },
   {
-    title: 'Software Developer',
-    organization: 'All Things Linux',
-    description: 'Developing tools and applications for the largest Linux community on Discord (20,000+ users).',
-    duration: 'Apr 2025 - Present',
-    location: 'Charlotte, NC (Remote)',
-    logo: '/logos/all_things_linux.png',
-  },
-  {
     title: 'Developer Relations',
     organization: 'Builders League',
     description: "Hosted hackathons and connected with developer communities.",
