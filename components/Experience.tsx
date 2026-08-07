@@ -3,7 +3,7 @@ import Image from 'next/image'
 type Experience = {
   title: string
   organization: string
-  description: string
+  description: string | string[]
   duration: string
   location: string
   logo: string
@@ -13,11 +13,13 @@ const experiences: Experience[] = [
   {
     title: 'IT Business Analyst Summer Student',
     organization: 'Manitoba Liquor and Lotteries Corporation',
-    description: `Researching and writing proposals for how chatbots, LLMs, and agentic AI can be utilized within MBLL to improve A&A team productivity and ITS workflows.S
-    Supported migration of SharePoint documents for Consulting Services to HPE Content Manager to ensure structure, usability, and compliance.
-    Building Power BI dashboards and cleaning data to visualize reports on work item progress, team trends, potential bottlenecks, resource workloads, and review pipelines for the Architecture & Analysis team.
-    Collaborated with data architects, solution architects, and business analysts to understand best practices for data retention and analysis.
-    Updated limitation tracking documents for sustainment plans of ITS solutions used by MBLL.`,
+    description: [
+      'Researching and writing proposals for how chatbots, LLMs, and agentic AI can be utilized within MBLL to improve A&A team productivity and ITS workflows.',
+      'Supported migration of SharePoint documents for Consulting Services to HPE Content Manager to ensure structure, usability, and compliance.',
+      'Building Power BI dashboards and cleaning data to visualize reports on work item progress, team trends, potential bottlenecks, resource workloads, and review pipelines for the Architecture & Analysis team.',
+      'Collaborated with data architects, solution architects, and business analysts to understand best practices for data retention and analysis.',
+      'Updated limitation tracking documents for sustainment plans of ITS solutions used by MBLL.',
+    ],
     duration: 'May 2026 - August 2026',
     location: 'Winnipeg, MB',
     logo: '/logos/mbll.jpg',
@@ -128,7 +130,15 @@ export default function Experiences() {
                 </div>
               </summary>
               <div className="mt-4 text-white/70">
-                {experience.description}
+                {Array.isArray(experience.description) ? (
+                  <ul className="list-disc space-y-2 pl-5">
+                    {experience.description.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{experience.description}</p>
+                )}
               </div>
             </details>
           ))}
