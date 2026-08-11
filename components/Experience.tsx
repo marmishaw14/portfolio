@@ -57,6 +57,14 @@ const experiences: Experience[] = [
     logo: '/logos/cansbridge.jpg',
   },
   {
+    title: 'President',
+    organization: 'Bits and Bytes Association',
+    description: "Leading and directing the BBA's vision and initiatives for the Fall 2026 term.",
+    duration: 'August 2026 - Present',
+    location: 'Winnipeg, MB',
+    logo: '/logos/bits_and_bytes_logo.png',
+  },
+  {
     title: 'Treasurer & Web Developer',
     organization: 'Bits and Bytes Association',
     description: "Managing the club's finances and securing financial partnerships. Also currently maintaining the club website.",
