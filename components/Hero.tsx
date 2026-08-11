@@ -128,13 +128,20 @@ export default function Hero() {
                   duration={10}
                   shineColor="#A07CFE"
                 />
-                <div className="relative aspect-[4/4.35] overflow-hidden rounded-2xl bg-gradient-to-br from-[#22222a] via-[#272235] to-[#4d3d69]">
+                <div className="group/avatar relative aspect-[4/4.35] overflow-hidden rounded-2xl bg-gradient-to-br from-[#22222a] via-[#272235] to-[#4d3d69]">
+                  <Image
+                    src="/fr3sh_pfp.jpg"
+                    alt=""
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover/avatar:scale-105 motion-reduce:transition-none"
+                    sizes="(min-width: 1024px) 304px, 384px"
+                  />
                   {!imageError ? (
                     <Image
                       src="/mccauley-avatar.jpg"
                       alt="McCauley Armishaw"
                       fill
-                      className="object-cover"
+                      className="object-cover transition-all duration-500 group-hover/avatar:scale-105 group-hover/avatar:opacity-0 motion-reduce:transition-none"
                       sizes="(min-width: 1024px) 304px, 384px"
                       priority
                       onError={() => setImageError(true)}
