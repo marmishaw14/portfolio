@@ -87,6 +87,36 @@ export default function Hero() {
               >
                 <Linkedin className="h-4 w-4" />
               </a>
+              <a
+                href="https://substack.com/@mccauleyarmishaw"
+                target="_blank"
+                rel="noreferrer"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 transition-colors hover:border-white/35"
+                aria-label="Substack"
+              >
+                <Image
+                  src="/logos/substack.png"
+                  alt=""
+                  width={16}
+                  height={16}
+                  className="h-4 w-4 object-contain opacity-60 transition-opacity hover:opacity-100"
+                />
+              </a>
+              <a
+                href="https://x.com/mccauleycodes"
+                target="_blank"
+                rel="noreferrer"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 transition-colors hover:border-white/35"
+                aria-label="X (Twitter)"
+              >
+                <Image
+                  src="/logos/x_logo.png"
+                  alt=""
+                  width={16}
+                  height={16}
+                  className="h-4 w-4 object-contain opacity-60 transition-opacity hover:opacity-100"
+                />
+              </a>
             </div>
           </div>
 
