@@ -68,7 +68,7 @@ const experiences: Experience[] = [
     title: 'Treasurer & Web Developer',
     organization: 'Bits and Bytes Association',
     description: "Managing the club's finances and securing financial partnerships. Also currently maintaining the club website.",
-    duration: 'December 2025 - Present',
+    duration: 'December 2025 - August 2026',
     location: 'Winnipeg, MB',
     logo: '/logos/bits_and_bytes_logo.png',
   },
