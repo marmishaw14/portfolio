@@ -37,41 +37,40 @@ export default function Navigation() {
   }
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
+    { id: 'experience', label: 'Experience' },
     { id: 'sidequests', label: 'Sidequests' },
+    { id: 'contact', label: 'Contact' },
   ]
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 z-50 w-full border-b transition-all duration-300 ${
         isMobileMenuOpen
-          ? 'bg-black/95 backdrop-blur-md shadow-xl'
+          ? 'border-white/10 bg-black/95 backdrop-blur-md'
           : isScrolled
-          ? 'bg-[#1e1e1e]/90 backdrop-blur-sm shadow-md'
-          : 'bg-transparent'
+          ? 'border-white/10 bg-black/80 backdrop-blur-md'
+          : 'border-transparent bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
           <button
             type="button"
             onClick={() => {
               setIsMobileMenuOpen(false)
               router.push('/')
             }}
-            className="text-xl font-bold text-white transition-opacity hover:opacity-85"
+            className="text-sm font-medium text-white transition-opacity hover:opacity-75 sm:text-base"
           >
             McCauley Armishaw
           </button>
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden items-center gap-7 md:flex">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="font-semibold text-white/90 hover:text-white transition-colors"
+                className="text-sm text-white/45 transition-colors hover:text-white"
               >
                 {item.label}
               </button>
@@ -80,7 +79,7 @@ export default function Navigation() {
           <button
             type="button"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-            className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/20 text-white"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/15 text-white md:hidden"
             aria-label="Toggle navigation menu"
             aria-expanded={isMobileMenuOpen}
           >
@@ -98,13 +97,13 @@ export default function Navigation() {
           </button>
         </div>
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-white/10 py-3">
+          <div className="border-t border-white/10 py-3 md:hidden">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="rounded-md px-2 py-2 text-left font-semibold text-white/90 hover:bg-white/10 hover:text-white transition-colors"
+                  className="rounded-md px-2 py-2 text-left text-sm text-white/65 transition-colors hover:bg-white/10 hover:text-white"
                 >
                   {item.label}
                 </button>
