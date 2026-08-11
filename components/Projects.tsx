@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Script from 'next/script'
+import { ArrowUpRight } from 'lucide-react'
 
 type Project = {
   title: string
@@ -80,66 +81,91 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-transparent"
+      className="border-b border-white/10 px-5 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-white">
-          Projects
-        </h2>
-        <div className="grid gap-8 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))] justify-items-center">
-          {projects.map((project) => (
-            <div
+        <div className="mb-8 flex items-end justify-between gap-6">
+          <div>
+            <h2 className="mt-2 text-3xl text-white sm:text-4xl">
+              Projects
+            </h2>
+          </div>
+          <p className="hidden max-w-xs text-right text-sm text-white/35 sm:block">
+            Personal projects and hackathon builds.
+          </p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          {projects.map((project, index) => (
+            <article
               key={project.title}
-              className="w-full max-w-sm bg-[#2a2a2a] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-700 flex flex-col"
+              className={`group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.045] transition-colors hover:border-white/20 hover:bg-white/[0.065] ${
+                index === 0 ? 'md:col-span-2 lg:grid lg:grid-cols-[1.15fr_0.85fr]' : ''
+              }`}
             >
-              <div className="relative w-full h-56">
+              <div
+                className={`relative overflow-hidden bg-[#282333] ${
+                  index === 0 ? 'h-64 sm:h-80 lg:h-full lg:min-h-[25rem]' : 'h-52 sm:h-60'
+                }`}
+              >
                 {project.image ? (
                   <Image
                     src={project.image}
                     alt={`${project.title} preview`}
                     fill
-                    className="object-cover"
-                    sizes="(min-width: 1024px) 384px, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                    sizes={
+                      index === 0
+                        ? '(min-width: 1024px) 55vw, 100vw'
+                        : '(min-width: 768px) 50vw, 100vw'
+                    }
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-primary-500 to-primary-200" />
                 )}
               </div>
-              <div className="flex flex-col flex-1 p-6">
+              <div className="flex flex-col p-5 sm:p-6">
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2 text-white">
+                  {index === 0 && (
+                    <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-sky-300/75">
+                      SpurHacks winner · $7,000
+                    </p>
+                  )}
+                  <h3 className="text-xl text-white">
                     {project.title}
                   </h3>
-                  <p className="text-gray-300 mb-4">
+                  <p className="mb-5 mt-2 text-sm leading-6 text-white/50">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech) => (
+                  <div className="mb-5 flex flex-wrap gap-2">
+                    {project.technologies.slice(0, 4).map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-purple-900/50 text-purple-100 text-sm rounded-full border border-purple-700"
+                        className="rounded-full border border-sky-400/15 bg-sky-400/10 px-2.5 py-1 text-xs text-sky-200/80"
                       >
                         {tech}
                       </span>
                     ))}
+                    {project.technologies.length > 4 && (
+                      <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-white/45">
+                        +{project.technologies.length - 4}
+                      </span>
+                    )}
                   </div>
                 </div>
-                <div className="flex gap-4 mt-2">
-                  <a
-                    href={project.link}
-                    className="text-purple-500 hover:text-orange-300 hover:underline font-semibold"
-                  >
-                    Live Demo →
-                  </a>
+                <div className="mt-auto flex gap-5">
                   <a
                     href={project.github}
-                    className="text-gray-400 hover:text-gray-300 hover:underline font-semibold"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-white/50 transition-colors hover:text-white"
                   >
-                    GitHub →
+                    GitHub
+                    <ArrowUpRight className="h-3.5 w-3.5" />
                   </a>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
         <div className="mt-12 flex justify-center">
