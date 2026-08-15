@@ -40,7 +40,6 @@ export default function Navigation() {
     { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
     { id: 'sidequests', label: 'Sidequests' },
-    { id: 'contact', label: 'Contact' },
   ]
 
   return (

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import type { ReactNode } from 'react'
 import {
   ArrowRight,
   Camera,
@@ -11,7 +12,7 @@ type ExperienceItem = {
   title: string
   organization: string
   duration: string
-  description: string
+  description: ReactNode
   logo: string
 }
 
@@ -19,23 +20,15 @@ const professionalExperiences: ExperienceItem[] = [
   {
     title: 'IT Business Analyst',
     organization: 'Manitoba Liquor & Lotteries',
-    duration: 'May 2026 - Present',
+    duration: 'May 2026 - August 2026',
     description:
-      'Working across AI research, Power BI reporting, data analysis, and enterprise content migration.',
+      'Proposed use cases for incorporating AI into the architecture and analysis team. Built a prototype report with Power BI to analyze team trends, roadblocks, and value delivery. Did some data analysis and also some enterprise content migration.',
     logo: '/logos/mbll.jpg',
-  },
-  {
-    title: 'Venture Scout',
-    organization: 'Althra',
-    duration: 'Present',
-    description:
-      'Finding and evaluating high-potential early-stage startups in Manitoba.',
-    logo: '/logos/althra_logo.jpeg',
   },
   {
     title: 'Developer Relations',
     organization: 'Builders League',
-    duration: '2025–26',
+    duration: 'July 2025 - January 2026',
     description:
       'Hosted hackathons and built relationships across developer communities.',
     logo: '/logos/builders_league_logo.png',
@@ -43,6 +36,14 @@ const professionalExperiences: ExperienceItem[] = [
 ]
 
 const leadershipExperiences: ExperienceItem[] = [
+  {
+    title: 'Venture Scout',
+    organization: 'Althra',
+    duration: 'March 2026 - Present',
+    description:
+      'Actively seeking and evaluating high-potential early-stage startups in Manitoba with traction who would benefit from funding and mentorship.',
+    logo: '/logos/althra_logo.jpeg',
+  },
   {
     title: 'Director of Sponsorships',
     organization: 'CUSEC 2026',
@@ -63,8 +64,20 @@ const leadershipExperiences: ExperienceItem[] = [
     title: 'PSLP Fellow',
     organization: 'James W. Burns Leadership Institute',
     duration: 'April 2025 - April 2026',
-    description:
-      'Selected as one of 20 post-secondary students for the President’s Student Leadership Program.',
+    description: (
+      <>
+        Selected as one of 20 post-secondary students for the{' '}
+        <a
+          href="https://umanitoba.ca/asper/programs-of-study/presidents-student-leadership-program"
+          target="_blank"
+          rel="noreferrer"
+          className="text-sky-300 underline decoration-sky-300/40 underline-offset-4 transition-colors hover:text-sky-200"
+        >
+          President&apos;s Student Leadership Program
+        </a>
+        .
+      </>
+    ),
     logo: '/logos/asper_logo.png',
   },
 ]
@@ -193,7 +206,7 @@ export default function Experiences() {
               href="/sidequests"
               className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-sky-300 transition-colors hover:text-sky-200"
             >
-              Explore the gallery
+              Check out my sidequests
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>

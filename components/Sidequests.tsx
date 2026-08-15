@@ -214,7 +214,7 @@ function SidequestImageCarousel({
 export default function Sidequests() {
 
   return (
-    <section id="sidequests" className="overflow-x-hidden bg-transparent px-4 py-20 sm:px-6 lg:px-8">
+    <section id="sidequests" className="overflow-x-hidden bg-[#111111] px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12">
           <h2 className="text-4xl font-bold text-white">Hackathons & Sidequests</h2>
