@@ -13,15 +13,6 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: 'QuantDog',
-    description:
-      'Intelligent quantum threat detection and adaptive cryptographic routing platform that protects cryptocurrency transactions from evolving quantum computer attacks. SpurHacks 2025 Winner. ($7,000)',
-    technologies: ['FastAPI', 'Node.js', 'Python', 'WebSocket', 'React', 'TypeScript', 'UV', 'Vite'],
-    link: 'https://devpost.com/software/quantdog',
-    github: 'https://github.com/boshyxd/QuantDog',
-    image: '/quantdog.png',
-  },
-  {
     title: 'Gundam Artillery and Combat Operations Management API',
     description:
       'RESTful API for managing a Gundam artillery.',
@@ -29,24 +20,6 @@ const projects: Project[] = [
     link: 'https://comp3018capstoneproj.mccauleyarmishaw.com/',
     github: 'https://github.com/marmishaw14/comp-3018-capstone-project',
     image: "/gundammk2.jpg"
-  },
-  {
-    title: 'Winnipeg Transit But Better',
-    description:
-      'Winnipeg Transit departures and arrivals with enhanced analytics. Currently still in development making occasional updates.',
-    technologies: ['HTML/CSS', 'TypeScript', 'Cloudflare Tunnel', 'Docker'],
-    link: 'https://bettertransit.mccauleyarmishaw.com',
-    github: 'https://github.com/marmishaw14/winnipeg-transit-but-better',
-    image: '/wpg_transit.png'
-  },
-  {
-    title: 'ComparaVision',
-    description:
-      'A platform for the comparison of visual models (VLMs). Hack the 6ix 2025 Submission.',
-    technologies: ['TypeScript', 'Supabase', 'Runpod', 'Python', 'Node.js', 'MongoDB'],
-    link: 'https://devpost.com/software/comparavision',
-    github: 'https://github.com/orgs/HacktheSix/repositories',
-    image: '/comparavision.png'
   },
   {
     title: 'ComplAInce: Manufacturing Regulatory Compliance Chatbot',
@@ -126,11 +99,6 @@ export default function Projects() {
               </div>
               <div className="flex flex-col p-5 sm:p-6">
                 <div className="flex-1">
-                  {index === 0 && (
-                    <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-sky-300/75">
-                      SpurHacks winner · $7,000
-                    </p>
-                  )}
                   <h3 className="text-xl text-white">
                     {project.title}
                   </h3>
