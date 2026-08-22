@@ -155,10 +155,7 @@ export default function Hero() {
                     Currently
                   </p>
                   <p className="mt-2 text-sm font-semibold text-white">
-                    IT Business Analyst
-                  </p>
-                  <p className="mt-1 text-sm text-white/45">
-                    Manitoba Liquor &amp; Lotteries
+                    Working on my own stuff
                   </p>
                 </div>
               </div>
@@ -201,7 +198,7 @@ export default function Hero() {
         >
           {[
             ['Based in', 'Winnipeg, Manitoba'],
-            ['Education', 'RRC Polytechnic'],
+            ['Previously', 'IT Business Analyst, Manitoba Liquor & Lotteries'],
             ['Currently learning more about...', 'AI · Data'],
           ].map(([label, value]) => (
             <div key={label}>
