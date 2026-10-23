@@ -138,7 +138,7 @@ export default function Hero() {
                   />
                   {!imageError ? (
                     <Image
-                      src="/mccauley-avatar.jpg"
+                      src="/mccauley-sf-pfp.jpg"
                       alt="McCauley Armishaw"
                       fill
                       className="object-cover transition-all duration-500 group-hover/avatar:scale-105 group-hover/avatar:opacity-0 motion-reduce:transition-none"
@@ -197,7 +197,7 @@ export default function Hero() {
           className="mt-14 grid gap-6 border-t border-white/10 pt-7 sm:grid-cols-3 lg:mt-16"
         >
           {[
-            ['Based in', 'Winnipeg, Manitoba'],
+            ['Based in', 'Winnipeg, Manitoba (open to relocation)'],
             ['Previously', 'IT Business Analyst, Manitoba Liquor & Lotteries'],
             ['Currently learning more about...', 'AI · Data'],
           ].map(([label, value]) => (
