@@ -48,8 +48,7 @@ export default function Hero() {
               >
                 Application Development and Delivery
               </a>
-              , seeking Fall 2026 and Winter 2027 software engineering
-              internships/co-ops.
+              , working as an incoming Software Developer Co-op at Manitoba Liquor & Lotteries.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -155,7 +154,7 @@ export default function Hero() {
                     Currently
                   </p>
                   <p className="mt-2 text-sm font-semibold text-white">
-                    Working on my own stuff
+                    Incoming SWE Co-op @ Manitoba Liquor & Lotteries
                   </p>
                 </div>
               </div>
@@ -199,7 +198,7 @@ export default function Hero() {
           {[
             ['Based in', 'Winnipeg, Manitoba (open to relocation)'],
             ['Previously', 'IT Business Analyst, Manitoba Liquor & Lotteries'],
-            ['Currently learning more about...', 'AI · Data'],
+            ['Currently learning more about...', 'AI · Data · Computer Vision'],
           ].map(([label, value]) => (
             <div key={label}>
               <p className="text-sm font-semibold text-white/35">{label}</p>
