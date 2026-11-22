@@ -18,7 +18,15 @@ type ExperienceItem = {
 
 const professionalExperiences: ExperienceItem[] = [
   {
-    title: 'IT Business Analyst',
+    title: 'Software Developer Co-op',
+    organization: 'Manitoba Liquor & Lotteries',
+    duration: 'January 2027 - April 2027',
+    description:
+      'Robotics Process Automation (RPA). Incoming Winter 2027.',
+    logo: '/logos/mbll.jpg',
+  },
+  {
+    title: 'IT Business Analyst Intern',
     organization: 'Manitoba Liquor & Lotteries',
     duration: 'May 2026 - August 2026',
     description:
